@@ -1,2 +1,2 @@
 # Astral-Treasure
- Nivel de videojuego
+ Nivel de videojuego Astral Treasure
