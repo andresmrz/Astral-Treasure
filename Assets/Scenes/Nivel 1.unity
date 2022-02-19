@@ -1160,11 +1160,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c510d983ab08e469ef8f049475cc31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   sensitivity: 80
   cam: {fileID: 1402047828}
   nombre: Vertical2
   personaje: {fileID: 1912917147}
+  fuerzaSalto: 8
 --- !u!143 &1864702909
 CharacterController:
   m_ObjectHideFlags: 0

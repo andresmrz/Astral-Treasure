@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterController_Motor : MonoBehaviour {
 
-	public float speed = 5.0f;
+	public float speed = 3.0f;
 	public float sensitivity = 90.0f;
 	
 	CharacterController character;
@@ -17,13 +17,20 @@ public class CharacterController_Motor : MonoBehaviour {
 	
 	public GameObject personaje;
 	private Animator p_animator;
+
+	public float fuerzaSalto = 800f;
+	private Rigidbody rb;
 		
 	void Start(){
 		p_animator = personaje.GetComponent<Animator>();
 		character = GetComponent<CharacterController>();
-		
+		rb = GetComponent<Rigidbody>();
 	}
 
+	void FixedUpdate()
+    {
+
+    }
 
 	
 	void Update(){
@@ -36,12 +43,12 @@ public class CharacterController_Motor : MonoBehaviour {
         
 		}
 		if(Input.GetAxis ("Fire3")>0){
-			speed = 8.0f;
+			speed = 5.0f;
 			//if(!p_animator.GetBool("Run")){
 			//	p_animator.SetBool("Run", true);
 			//}
 		}else{
-			speed = 5.0f;
+			speed = 3.0f;
 
 			//p_animator.SetBool("Run", false);
 		}
@@ -69,6 +76,16 @@ public class CharacterController_Motor : MonoBehaviour {
 		CameraRotation (cam, rotX, rotY);
 		movement = transform.rotation * movement;
 		character.Move (movement * Time.deltaTime);
+
+		if(Input.GetButtonDown("Jump"))
+		{
+			//rb.AddForce(new Vector3(0, fuerzaSalto, 0), ForceMode.Impulse);
+			//rb.AddForce(Vector3.up, ForceMode.Impulse);
+			print("salto");
+
+			Vector3 salto = new Vector3(0, 2, 0);
+			character.Move(salto);
+		}
 	}
 
 	

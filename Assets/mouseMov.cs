@@ -12,7 +12,7 @@ public class mouseMov : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        movementQuantity = 20f;
     }
 
     // Update is called once per frame
