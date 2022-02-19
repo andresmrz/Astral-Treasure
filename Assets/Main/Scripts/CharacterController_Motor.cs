@@ -45,8 +45,8 @@ public class CharacterController_Motor : MonoBehaviour {
 
 			//p_animator.SetBool("Run", false);
 		}
-		moveFB = Input.GetAxis (nombre) * speed;
-		moveLR = Input.GetAxis (nombre) * speed;
+		moveFB = Input.GetAxis ("Horizontal") * speed;
+		moveLR = Input.GetAxis ("Vertical") * speed;
 	
 		rotX = Input.GetAxis ("Mouse X") * sensitivity;
 		rotY = Input.GetAxis ("Mouse Y") * sensitivity;
