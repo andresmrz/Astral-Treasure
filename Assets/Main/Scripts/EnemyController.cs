@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour {
 	public GameObject Player;	// Reference to the player
 	public NavMeshAgent _agent; // Reference to the NavMeshAgent
 
- 
+
 	// Use this for initialization
 	void Start () {
 		//agent = GetComponent<NavMeshAgent>();
