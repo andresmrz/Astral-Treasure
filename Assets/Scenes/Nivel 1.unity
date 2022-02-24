@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 5f00827c723564f5fa51a64ed59a1b46,
         type: 3}
       propertyPath: m_Name
-      value: Antorcha_puerta1
+      value: Torch R
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5f00827c723564f5fa51a64ed59a1b46,
         type: 3}
@@ -383,7 +383,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 510e8b094d51c0c448a1f47f52b71413, type: 3}
       propertyPath: m_Name
-      value: Ruinas
+      value: Ruins
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 510e8b094d51c0c448a1f47f52b71413, type: 3}
       propertyPath: m_LocalPosition.x
@@ -708,7 +708,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 5f00827c723564f5fa51a64ed59a1b46,
         type: 3}
       propertyPath: m_Name
-      value: Antorcha_puerta2
+      value: Torch L
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5f00827c723564f5fa51a64ed59a1b46,
         type: 3}
@@ -1102,7 +1102,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: ea6da4a0ebadb704691a6fa2d03f817b, type: 3}
       propertyPath: m_Name
-      value: Cofre
+      value: TreasureChest
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ea6da4a0ebadb704691a6fa2d03f817b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1400,7 +1400,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1241590182010902, guid: 9cabcd906e1301e43a847741b5dc182d, type: 3}
       propertyPath: m_Name
-      value: Castillo
+      value: Castle
       objectReference: {fileID: 0}
     - target: {fileID: 4668002515956546, guid: 9cabcd906e1301e43a847741b5dc182d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2016,7 +2016,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1594879466734162, guid: c82411508e9628b4e9f629bf2800542f, type: 3}
       propertyPath: m_Name
-      value: lingote
+      value: GoldIngot
       objectReference: {fileID: 0}
     - target: {fileID: 4147114331781828, guid: c82411508e9628b4e9f629bf2800542f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2699,7 +2699,7 @@ GameObject:
   - component: {fileID: 1957492977}
   - component: {fileID: 1957492976}
   m_Layer: 0
-  m_Name: Mapa_laberinto
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2772,7 +2772,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 25c64e2ffde2a024e82f36aea7571d46,
         type: 3}
       propertyPath: m_Name
-      value: Fuerte
+      value: Fort
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 25c64e2ffde2a024e82f36aea7571d46,
         type: 3}
