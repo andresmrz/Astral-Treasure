@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 43122652}
   - component: {fileID: 43122651}
   m_Layer: 0
-  m_Name: Sol
+  m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 408909546}
   - component: {fileID: 408909545}
   m_Layer: 0
-  m_Name: torchLuz
+  m_Name: torchLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 510626027}
   - component: {fileID: 510626028}
   m_Layer: 0
-  m_Name: torchLuz
+  m_Name: torchLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 655675207}
   - component: {fileID: 655675208}
   m_Layer: 0
-  m_Name: Luz
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1163,7 +1163,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: ea6da4a0ebadb704691a6fa2d03f817b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e0754847f0fffb541ba2aa7491df0d22, type: 2}
+      objectReference: {fileID: 9100000, guid: 87c5f15e9fae7b647b6ec59158c06d6a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea6da4a0ebadb704691a6fa2d03f817b, type: 3}
 --- !u!1 &708198548 stripped
@@ -1469,7 +1469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 72f601b85cb4ebd41a3a3b156186ad29, type: 3}
       propertyPath: m_Name
-      value: Puerta
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 72f601b85cb4ebd41a3a3b156186ad29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2637,8 +2637,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 1868262999}
-  clip_open: {fileID: 8300000, guid: 6a63e98034807864baf5e4717d4f75ab, type: 3}
-  clip_close: {fileID: 8300000, guid: 5a1d065361fce3645b447277dfb60191, type: 3}
+  clip_open: {fileID: 8300000, guid: 5857589ff0ddd4645aced14304c5e152, type: 3}
+  clip_close: {fileID: 8300000, guid: d5b550dda7f4c8b4d8a4ef955a83f38b, type: 3}
 --- !u!65 &1868262994
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2799,7 +2799,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1957492975}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: c1ad9eec881ab364c93d15c78698b87e, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 3495a7a351a86ca45b6aa7cf3b6fc106, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1957492977
 Terrain:
