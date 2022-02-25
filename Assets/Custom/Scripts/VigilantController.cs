@@ -6,6 +6,7 @@ public class VigilantController : MonoBehaviour
 {
     public GameObject OpenPanel;
     public GameObject Letra;
+    public GameObject Player;
     private Animator animator;
 
     private bool _isInsideTrigger = false;
@@ -13,7 +14,7 @@ public class VigilantController : MonoBehaviour
     //public string OpenText = "Press E to open";
     //public string CloseText = "press E to close";
     private bool _isOpen = false;
-
+    private bool mensaje = true;
 
     void Start()
     {
@@ -37,12 +38,33 @@ public class VigilantController : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            _isInsideTrigger = true;
-            OpenPanel.SetActive(true);
-            if (animator.GetInteger("AnimIndex") != 1)
+            if (mensaje)
             {
-                animator.SetInteger("AnimIndex", 1);
-                animator.SetTrigger("Next");
+                _isInsideTrigger = true;
+                OpenPanel.SetActive(true);
+
+                float distance = Vector3.Distance(Player.transform.position, transform.position);
+
+                if (distance >= 2)
+                {
+                    if (animator.GetInteger("AnimIndex") != 1)
+                    {
+                        animator.SetInteger("AnimIndex", 1);
+                        animator.SetTrigger("Next");
+                    }
+                }
+
+                mensaje = false;
+            }
+            else
+            {
+                float distance = Vector3.Distance(Player.transform.position, transform.position);
+
+                if (distance <= 2)
+                {
+                    _isInsideTrigger = true;
+                    OpenPanel.SetActive(true);
+                }
             }
         }
     }

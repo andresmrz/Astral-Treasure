@@ -1599,7 +1599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Guerero has venido desde muy lejos, pero lograste encontrar el tesoro.
+  m_Text: Guerrero has venido desde muy lejos, pero lograste encontrar el tesoro.
     Pasa por tu recompensa
 --- !u!222 &1024404270
 CanvasRenderer:
@@ -2529,6 +2529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OpenPanel: {fileID: 1352990655}
   Letra: {fileID: 1024404267}
+  Player: {fileID: 1864702906}
 --- !u!64 &1576363544
 MeshCollider:
   m_ObjectHideFlags: 0
