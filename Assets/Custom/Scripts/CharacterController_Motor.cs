@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CharacterController_Motor : MonoBehaviour {
 
@@ -20,6 +22,9 @@ public class CharacterController_Motor : MonoBehaviour {
 
 	public float fuerzaSalto = 800f;
 	private Rigidbody rb;
+
+	public int vida = 100;
+	public Slider sliderVida;
 		
 	void Start(){
 		p_animator = personaje.GetComponent<Animator>();
@@ -85,6 +90,13 @@ public class CharacterController_Motor : MonoBehaviour {
 
 			Vector3 salto = new Vector3(0, 2, 0);
 			character.Move(salto);
+		}
+
+		sliderVida.GetComponent<Slider>().value = vida;
+
+		if(vida <= 0)
+        {
+			SceneManager.LoadScene("GameOver");
 		}
 	}
 
