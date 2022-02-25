@@ -601,6 +601,9 @@ MonoBehaviour:
   cam: {fileID: 353942979}
   nombre: Vertical
   personaje: {fileID: 699256102}
+  fuerzaSalto: 800
+  vida: 100
+  sliderVida: {fileID: 0}
 --- !u!143 &693672552
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2041,6 +2044,9 @@ MonoBehaviour:
   cam: {fileID: 2097784294}
   nombre: Vertical2
   personaje: {fileID: 269486676}
+  fuerzaSalto: 800
+  vida: 100
+  sliderVida: {fileID: 0}
 --- !u!143 &1720754020
 CharacterController:
   m_ObjectHideFlags: 0

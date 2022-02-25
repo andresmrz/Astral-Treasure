@@ -13,7 +13,7 @@ public class CharacterController_Motor : MonoBehaviour {
 	public GameObject cam;
 	float moveFB, moveLR;
 	float rotX, rotY;
-    public string nombre;
+  public string nombre;
 	
 	float gravity = -9.8f;
 	
