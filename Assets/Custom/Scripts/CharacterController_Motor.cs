@@ -23,7 +23,7 @@ public class CharacterController_Motor : MonoBehaviour {
 	public float fuerzaSalto = 800f;
 	private Rigidbody rb;
 
-	public int vida = 50;
+	public int vida = 100;
 	public Slider sliderVida;
 		
 	void Start(){

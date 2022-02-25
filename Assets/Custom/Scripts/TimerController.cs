@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour
@@ -8,14 +9,14 @@ public class TimerController : MonoBehaviour
 
 
     public GameObject textDisplay;
-    public int secondsLeft = 60;
+    public int secondsLeft = 300;
     public bool takingAway = false;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        textDisplay.GetComponent<TextMesh>().text = "Encuentra el tesoro!";
+        //textDisplay.GetComponent<TextMesh>().text = "Encuentra el tesoro!";
     }
 
 
@@ -32,9 +33,9 @@ public class TimerController : MonoBehaviour
         takingAway = true;
         yield return new WaitForSeconds(1);
         secondsLeft -= 1;
-        textDisplay.GetComponent<TextMesh>().text = "" + secondsLeft + " Seg.";
-        if(secondsLeft == 0){
-            textDisplay.GetComponent<TextMesh>().text = "Loser!";
+        textDisplay.GetComponent<Text>().text = "" + secondsLeft + " Seg.";
+        if(secondsLeft <= 0){
+            SceneManager.LoadScene("GameOver");
         }
         takingAway = false;
     }    
