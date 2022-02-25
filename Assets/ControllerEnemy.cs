@@ -24,6 +24,7 @@ public class ControllerEnemy : MonoBehaviour
     }
 
     // Update is called once per frame
+    [System.Obsolete]
     void Update()
     {
         // Distance to the target
@@ -32,11 +33,24 @@ public class ControllerEnemy : MonoBehaviour
         // If inside the lookRadius
         if (distance <= lookRadius)
         {
-            // Move towards the target
-            _agent.SetDestination(Player.transform.position);
+            if(distance <= 1.2)
+            {
+                animator.SetFloat("VelX", 0);
+                animator.SetFloat("VelY", 2);
 
-            animator.SetFloat("VelX", transform.position.x);
-            animator.SetFloat("VelY", transform.position.y);
+                _agent.isStopped = true;
+
+                Player.GetComponent<CharacterController_Motor>().vida -= 1;
+            }
+            else
+            {
+                animator.SetFloat("VelX", 0);
+                animator.SetFloat("VelY", 1);
+
+                // Move towards the target
+                _agent.isStopped = false;
+                _agent.SetDestination(Player.transform.position);
+            }
         }
         else
         {
