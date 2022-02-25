@@ -30,7 +30,10 @@ public class CharacterController_Motor : MonoBehaviour {
 		p_animator = personaje.GetComponent<Animator>();
 		character = GetComponent<CharacterController>();
 		rb = GetComponent<Rigidbody>();
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 		Cursor.visible = false;
 	}
 
