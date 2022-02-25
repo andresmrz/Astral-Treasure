@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TesoroController : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class TesoroController : MonoBehaviour
     public AudioSource source;
     public AudioClip clip_open;
     public AudioClip clip_close;
+
+    private bool iniciar = false;
+    private float secondsCounter = 0;
 
     void Start()
     {
@@ -17,7 +21,15 @@ public class TesoroController : MonoBehaviour
     
     void Update()
     {
-       
+        if (iniciar)
+       {
+            secondsCounter += Time.deltaTime;
+
+            if(secondsCounter >= 2)
+            {
+                SceneManager.LoadScene("Mensaje");
+            }
+       }
     }
 
     private void OnTriggerEnter(Collider col)
@@ -31,6 +43,8 @@ public class TesoroController : MonoBehaviour
 
                 animator.SetInteger("AnimIndex", 1);
                 animator.SetTrigger("Next");
+
+                iniciar = true;
 			}
         }
     }
