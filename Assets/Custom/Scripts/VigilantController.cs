@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GuardianController : MonoBehaviour
+public class VigilantController : MonoBehaviour
 {
     public GameObject OpenPanel;
     public GameObject Letra;
     private Animator animator;
+
     private bool _isInsideTrigger = false;
 
     //public string OpenText = "Press E to open";
@@ -18,6 +19,7 @@ public class GuardianController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+
 
     void Update()
     {
@@ -65,12 +67,11 @@ public class GuardianController : MonoBehaviour
             return OpenPanel.activeInHierarchy;
         }
     }
-
     /*
-    private void SetPanelText(string text){
-        Text panelText = Letra.GetComponent <Text>();
-        if(panelText.text = null){
-            panelText.text = text;
-        }
-    } */
+        private void SetPanelText(string text){
+            Text panelText = Letra.GetComponent <Text>();
+            if(panelText.text = null){
+                panelText.text = text;
+            }
+        } */
 }
