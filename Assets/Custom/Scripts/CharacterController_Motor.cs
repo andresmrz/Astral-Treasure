@@ -30,6 +30,7 @@ public class CharacterController_Motor : MonoBehaviour {
 		p_animator = personaje.GetComponent<Animator>();
 		character = GetComponent<CharacterController>();
 		rb = GetComponent<Rigidbody>();
+		Cursor.visible = false;
 	}
 
 	void FixedUpdate()
